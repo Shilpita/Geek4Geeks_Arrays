@@ -20,10 +20,27 @@ public class FindFixedPoint {
 		for(int i: arr1)
 			System.out.print(i +"\t");
 	}
+	/**
+	 * Binary search
+	 * @param arr
+	 * @return index
+	 */
+	private static int findFixedIndex(int[] arr , int low, int high){
+		if(low > high)
+			return -1;
+		int mid =(high+low)/2;
+		if(mid == arr[mid])
+			return mid;
+		else if(mid > arr[mid])
+			return findFixedIndex(arr, mid+1, arr.length-1);
+		else
+			return findFixedIndex(arr, low, mid-1);
+	}
 	
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		int[] arr = {-10, -5, 0, 3, 7};
+		printArray(arr);
+		System.out.println("\nThe Fixed Point :"+ findFixedIndex(arr, 0,arr.length-1));
 	}
 
 }
