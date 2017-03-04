@@ -1,7 +1,9 @@
 import java.util.ArrayDeque;
 import java.util.Deque;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.TreeSet;
 
 public class SampleTest {
 
@@ -26,7 +28,7 @@ public class SampleTest {
 //		System.out.println("\n"+ b);
 //		
 //		//System.out.println(a*b);
-		
+	/*	
 		ArrayDeque <Integer> dequeA = new ArrayDeque<Integer>();
 
 	    dequeA.add(0);
@@ -43,9 +45,17 @@ public class SampleTest {
 		  
 		}
 
-
-
-
+*/
+	TreeSet<Integer>t = new TreeSet<Integer>();
+	t.add(1);
+	t.add(5);
+	t.add(10000);
+	t.add(3);
+	
+	int n = t.ceiling(6);
+	
+		Integer n1 = Integer.MIN_VALUE;
+		System.out.println(n1);
 	}
 	 
 
