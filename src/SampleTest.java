@@ -45,7 +45,7 @@ public class SampleTest {
 		  
 		}
 
-*/
+*//*
 	TreeSet<Integer>t = new TreeSet<Integer>();
 	t.add(1);
 	t.add(5);
@@ -56,7 +56,27 @@ public class SampleTest {
 	
 		Integer n1 = Integer.MIN_VALUE;
 		System.out.println(n1);
-	}
+	
 	 
-
+		String s = "shilpita";
+		String pre = s.substring(0, 0);
+		System.out.println(s.indexOf("sh"));
+		int i = Integer.MIN_VALUE;
+	*/	
+		String a = Integer.toBinaryString(5);
+		String c = Integer.toBinaryString(5>>2);
+		String b = Integer.toBinaryString(10);
+		System.out.println(a);
+		System.out.println(c);
+		
+	    System.out.println(5>>1);
+		
+		if(b.length() > a.length()){
+			int diff = b.length() - a.length();
+			for(int i= 0 ; i< diff; i++)
+				a = "0"+a;
+		}
+		
+		System.out.println(a);
+	}
 }
