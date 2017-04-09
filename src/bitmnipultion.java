@@ -16,7 +16,7 @@ public class bitmnipultion {
 		System.out.println(n&1);
 		System.out.println(str+"\n"+j);
 		
-		*/
+
 		
 	    char[] map = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f'};
 	    int num =123;
@@ -32,8 +32,12 @@ public class bitmnipultion {
 	        }
 	
 	        System.out.println(Arrays.toString(
-	        	    "Thequickbrownfoxjumps".split("(?<=\\G.{4})")
-	        	));
+	        	    "Thequickbrownfoxjumps".split("(?<=\\G.{4})")));
+	    */    
+		int ones = ~0;
+		int i = (1<<3) -1;
+		String s = String.format("%8s", Integer.toBinaryString(ones)); //.replace(" ", "0")	;
+		System.out.println(ones+"   "+s+ s.length());
 	}
 
 }
